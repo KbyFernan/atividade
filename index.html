@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criptografar senha</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1 class="title">Criptografar senha</h1>
+      <p class="description">Cada letra é substituída pela próxima no alfabeto (A → B, Z → A).</p>
+      <form id="passwordForm">
+        <label for="password">Digite uma senha</label>
+        <div class="input-row">
+          <input id="password" type="password" autocomplete="off" required />
+          <button type="submit">Criptografar</button>
+        </div>
+      </form>
+      <section id="results" aria-live="polite" hidden>
+        <p><strong>Original:</strong> <span id="original"></span></p>
+        <p><strong>Criptografada:</strong> <span id="encrypted"></span></p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
